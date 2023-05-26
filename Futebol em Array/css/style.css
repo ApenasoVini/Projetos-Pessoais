@@ -6,16 +6,18 @@
 }
 
 body {
-    background-image: url('midia/campo.jpg');
+    background-image: url(https://img.elo7.com.br/product/original/1BC27D8/painel-festa-1x0-70cm-estadio-futebol-personalizados.jpg);
+    background-size: cover;
 }
+
 
 /* id=# class=. */
 
 #time {
-    text-align: center;
     margin-top: 40px;
     font-family: system-ui;
     font-size: large;
+    color: black;
 }
 
 #titulo {
@@ -26,7 +28,6 @@ body {
 
 #cxbtn {
     text-align: center;
-    margin-top: 100px;
 }
 
 #btn {
@@ -34,6 +35,29 @@ body {
     font-size: medium;
     background: transparent;
     text-align: center;
-    width: 10vw;
-    height: 5vh;
+    width: 15vw;
+    height: 10vh;
+    border: solid 1px black;
 }
+
+#btn:hover {
+    font-family: system-ui;
+    font-size: medium;
+    background-color: black;
+    text-align: center;
+    width: 15vw;
+    height: 10vh;
+    border: solid 1px black;
+    color: white ;
+}
+
+#escalacao {
+    transform: rotate(90deg);
+    height: 45vh;
+    position: sticky;
+}
+
+#estadio {
+    text-align: center;
+}
+
