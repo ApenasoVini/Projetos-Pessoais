@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: white;
+    background-image: url('midia/campo.jpg');
 }
 
 /* id=# class=. */
@@ -26,10 +26,14 @@ body {
 
 #cxbtn {
     text-align: center;
+    margin-top: 100px;
 }
 
 #btn {
     font-family: system-ui;
     font-size: medium;
     background: transparent;
+    text-align: center;
+    width: 10vw;
+    height: 5vh;
 }
