@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: white;
+}
+
+/* id=# class=. */
+
+#valor {
+    text-align: center;
+    font-size: medium;
+    font-family: Arial;
+    font-style: normal;
+}
+
+#opcoes {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.botao {
+    height: 5vh;
+    width: 8vw;
+}
+
+#display{
+    height: 5vh;
+    width: 24vw;
+}
+
+#tit {
+    text-align: center;
+    font-family: system-ui;
+    font-style: italic;
+    margin-top: 200px;
+}
