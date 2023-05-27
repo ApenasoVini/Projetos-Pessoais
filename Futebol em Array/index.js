@@ -15,5 +15,18 @@ function campo() {
 
     var selecao = [goleiro, zagueiro1, zagueiro2, latdireito, latesquerdo, volante, meia1, meia2, pontaD, pontaE, centroAvante];
     var timeElement = document.getElementById('time');
-    timeElement.innerHTML = selecao.join('<br>')
+    timeElement.innerHTML = selecao.join('<br>');
+}
+
+
+function limpar() {
+    var jogador = prompt("Digite o nome do jogador a ser removido");
+    var index = selecao.indexOf(jogador);
+    if (index !== -1) {
+        selecao.splice(index, 1);
+        var timeElement = document.getElementById('time');
+        timeElement.innerHTML = selecao.join('<br>');
+    } else {
+        alert("Jogador não encontrado na escalação do time.");
+    }
 }

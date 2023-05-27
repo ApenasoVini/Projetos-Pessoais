@@ -30,7 +30,7 @@ body {
     text-align: center;
 }
 
-#btn {
+.btn {
     font-family: system-ui;
     font-size: medium;
     background: transparent;
@@ -40,7 +40,7 @@ body {
     border: solid 1px black;
 }
 
-#btn:hover {
+.btn:hover {
     font-family: system-ui;
     font-size: medium;
     background-color: black;
