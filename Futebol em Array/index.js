@@ -92,7 +92,7 @@ function campo() {
             break;
 
             case "D":
-            case"ds":
+            case"d":
 
             goleiro = prompt("Digite o nome do goleiro");
             zagueiro1 = prompt("Digite o nome do primeiro zagueiro");
@@ -112,9 +112,6 @@ function campo() {
             selecao = [goleiro, '<br><br>', latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>', volante, '<br>', meia1, meia2, '<br>', alaD, alaE, centroAvante];
             timeElement.innerHTML = selecao.join(' ');
             break;
-
-        case "Sair" || "sair" || "SAIR":
-            return
     }
 
     if (taticas !== "Sair" && taticas !== "sair" && taticas !== "A" && taticas !== "a" && taticas !== "B" && taticas !== "b" && taticas !== "C" && taticas !== "c" && taticas !== "D" && taticas !== "d") {
