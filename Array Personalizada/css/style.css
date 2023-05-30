@@ -31,6 +31,7 @@ body {
 #display{
     height: 5vh;
     width: 24vw;
+    padding: 10px;
 }
 
 #tit {
