@@ -34,8 +34,8 @@ function campo() {
         return;
     }
 
-    selecao = [goleiro, '<br>' , latdireito, zagueiro1, zagueiro2, latesquerdo, '<br>' ,volante, '<br>', meia1, meia2, '<br>', pontaD, , centroAvante, pontaE];
-    timeElement.innerHTML = selecao;
+    selecao = [goleiro, '<br><br>' , latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>' ,volante, '<br>', meia1, meia2, '<br><br>', pontaD, , centroAvante, pontaE];
+    timeElement.innerHTML = selecao.join('');
 }
 
 function limpar() {
