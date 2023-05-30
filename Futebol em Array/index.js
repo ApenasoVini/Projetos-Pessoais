@@ -1,5 +1,7 @@
+var goleiro, zagueiro1, zagueiro2, latdireito, latesquerdo, volante, meia1, meia2, pontaD, pontaE, centroAvante;
+var selecao = [];
+
 function campo() {
-    var goleiro, zagueiro1, zagueiro2, latdireito, latesquerdo, volante, meia1, meia2, pontaD, pontaE, centroAvante;
 
     goleiro = prompt("Digite o nome do goleiro");
     zagueiro1 = prompt("Digite o nome do primeiro zagueiro");
@@ -13,13 +15,11 @@ function campo() {
     pontaD = prompt("Digite o nome do ponta direita");
     centroAvante = prompt("Digite o nome do centroavante");
 
-    var selecao = [goleiro, zagueiro1, zagueiro2, latdireito, latesquerdo, volante, meia1, meia2, pontaD, pontaE, centroAvante];
+    selecao = [goleiro, zagueiro1, zagueiro2, latdireito, latesquerdo, volante, meia1, meia2, pontaD, pontaE, centroAvante];
     var timeElement = document.getElementById('time');
     timeElement.innerHTML = selecao.join('<br>');
 
 }
-
 function limpar() {
-    var selecao = [goleiro, zagueiro1, zagueiro2, latdireito, latesquerdo, volante, meia1, meia2, pontaD, pontaE, centroAvante];
     selecao.splice(0, selecao.length);
 }
