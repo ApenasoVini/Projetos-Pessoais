@@ -1,25 +1,25 @@
-var ary = []
-let array = document.getElementById("valor")
+var itens = []
+let valor = document.getElementById("arrayCriada")
 
 function adicionar(){
     let itemPraAdd = document.getElementById("display").value
-    ary.push(itemPraAdd)
-    array.innerHTML = ary
+    itens.push(itemPraAdd)
+    valor.innerHTML = itens.join(' ')
 }
 
 function remover(){
-    ary.splice(0, 1)
-    array.innerHTML = ary
+    itens.splice(0, 1)
+    valor.innerHTML = itens.join(' ')
 }
 
 function alterar(){
     var itemPraAlterar = document.getElementById("display").value
-    var posicao = ary.indexOf(itemPraAlterar)
+    var posicao = itens.indexOf(itemPraAlterar)
     if (posicao !== -1) {
         var novoItem = prompt("Digite o novo valor para " + itemPraAlterar)
-        ary[posicao] = novoItem
+        itens[posicao] = novoItem
     } else {
-        alert("O item não foi encontrado na array.")
+        alert("O item não foi encontrado na valor.")
     }
-    array.innerHTML = ary
+    valor.innerHTML = itens.join(' ')
 }

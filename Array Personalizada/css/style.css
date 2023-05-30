@@ -11,7 +11,7 @@ body {
 
 /* id=# class=. */
 
-#valor {
+#arrayCriada {
     text-align: center;
     font-size: medium;
     font-family: Arial;
@@ -24,14 +24,26 @@ body {
 }
 
 .botao {
-    height: 5vh;
-    width: 8vw;
+    height: 10vh;
+    width: 13vw;
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+}
+
+.botao:hover {
+    height: 10vh;
+    width: 13vw;
+    background-color: black;
+    color: white;
+    border: solid 1px black;
 }
 
 #display{
-    height: 5vh;
-    width: 24vw;
+    height: 8vh;
+    width: 39.5vw;
     padding: 10px;
+    font-size: larger;
 }
 
 #tit {
