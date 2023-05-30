@@ -59,11 +59,11 @@ function campo() {
         alaD = prompt("Digite o nome do ala direita");
         atacante1 = prompt("Digite o nome do primeiro atacante");
         atacante2 = prompt("Digite o nome do segundo atacante");
-        if (!letras(goleiro) || !letras(zagueiro1) || !letras(zagueiro2) || !letras(latdireito) || !letras(latesquerdo) || !letras(volante) || !letras(meia1) || !letras(meia2) || !letras(pontaE) || !letras(pontaD) || !letras(centroAvante)) {
+        if (!letras(goleiro) || !letras(zagueiro1) || !letras(zagueiro2) || !letras(zagueiro3) || !letras(meia1) || !letras(meia2) || !letras(meia1) || !letras(meia2) || !letras(meia3) || !letras(atacante1) || !letras(atacante2)) {
             alert("Escalação inválida. Por favor, digite o nome do jogador (verifique de não digitar números).");
             return;
         }
-            selecao = [goleiro, '<br><br>', zagueiro1, zagueiro2, zagueiro3,'<br><br>', meia1, meia2, meia3, '<br><br>', alaE, alaD,'<br><br>', atacante1, atacante2];
+            selecao = [goleiro, '<br><br>', zagueiro1, zagueiro2, zagueiro3,'<br><br>', meia1, meia2, meia3, '<br>', alaE, alaD,'<br><br>', atacante1, atacante2];
             timeElement.innerHTML = selecao.join(' ');
             break;
 
@@ -80,7 +80,13 @@ function campo() {
         alaD = prompt("Digite o nome do ala direita");
         atacante1 = prompt("Digite o nome do primeiro atacante");
         atacante2 = prompt("Digite o nome do segundo atacante");
-        break;
+        if (!letras(goleiro) || !letras(zagueiro1) || !letras(zagueiro2) || !letras(latdireito) || !letras(latesquerdo) || !letras(alaD) || !letras(meia1) || !letras(meia2) || !letras(alaE) || !letras(atacante1) || !letras(atacante2)) {
+            alert("Escalação inválida. Por favor, digite o nome do jogador (verifique de não digitar números).");
+            return;
+        }
+            selecao = [goleiro, '<br><br>', latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>', meia1, meia2, '<br>', alaD, alaE,'<br><br>', atacante1, atacante2];
+            timeElement.innerHTML = selecao.join(' ');
+            break;    
 
         case "D" || "d":
         
@@ -95,14 +101,14 @@ function campo() {
         alaE = prompt("Digite o nome do ala esquerda");
         alaD = prompt("Digite o nome do ala direita");
         centroAvante = prompt("Digite o nome do centroavante");
-        break;
-
-    if (!letras(goleiro) || !letras(zagueiro1) || !letras(zagueiro2) || !letras(latdireito) || !letras(latesquerdo) || !letras(volante) || !letras(meia1) || !letras(meia2) || !letras(pontaE) || !letras(pontaD) || !letras(centroAvante)) {
-
-        alert("Escalação inválida. Por favor, digite o nome do jogador (verifique de não digitar números).");
-        return;
-    }
-        
+        if (!letras(goleiro) || !letras(zagueiro1) || !letras(zagueiro2) || !letras(latdireito) || !letras(latesquerdo) || !letras(volante) || !letras(meia1) || !letras(meia2) || !letras(alaD) || !letras(alaE) || !letras(centroAvante)) {
+            alert("Escalação inválida. Por favor, digite o nome do jogador (verifique de não digitar números).");
+            return;
+        }
+            selecao = [goleiro, '<br><br>', latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>', volante, '<br>', meia1, meia2, '<br>', alaD, alaE, centroAvante];
+            timeElement.innerHTML = selecao.join(' ');
+            break;
+    
         case "Sair" || "sair":
         return
     }
