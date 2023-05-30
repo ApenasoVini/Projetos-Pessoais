@@ -2,9 +2,17 @@ var goleiro, zagueiro1, zagueiro2, latdireito, latesquerdo, volante, meia1, meia
 var selecao = [];
 var timeElement = document.getElementById('time');
 
+
+// Parâmetros para aceitar apenas letras
 function letras(input) {
     return /^[a-zA-Z]+$/.test(input);
   }
+
+// MESMO PARÂMETRO PARA NÚMEROS:
+//   function numeros(input) {
+//     return /^\d+$/.test(input);
+//   }
+  
 
 function campo() {
     
@@ -20,6 +28,7 @@ function campo() {
     pontaD = prompt("Digite o nome do ponta direita");
     centroAvante = prompt("Digite o nome do centroavante");
 
+    // Parâmetros sendo usados
     if (!letras(goleiro) || !letras(zagueiro1) || !letras(zagueiro2) || !letras(latdireito) || !letras(latesquerdo) || !letras(volante) || !letras(meia1) || !letras(meia2) || !letras(pontaE) || !letras(pontaD) || !letras(centroAvante)) {
         alert("Escalação inválida. Por favor, digite o nome do jogador (verifique de não digitar números).");
         return;
@@ -33,4 +42,5 @@ function limpar() {
     timeElement.innerHTML = '';
 }
 
+// Parâmetros sendo usados
 letras(input)
