@@ -3,10 +3,15 @@ var selecao = [];
 var timeElement = document.getElementById('time');
 
 
-// Parâmetros para aceitar apenas letras
+// Parâmetros para aceitar apenas letras (com acentos)
 function letras(input) {
-    return /^[a-zA-Z]+$/.test(input);
+    return /^\p{L}+$/u.test(input);
   }
+
+// Parâmetros para aceitar apenas letras (sem acentos)
+// function letras(input) {
+//     return /^[a-zA-Z]+$/.test(input);
+//   }
 
 // MESMO PARÂMETRO PARA NÚMEROS:
 //   function numeros(input) {
