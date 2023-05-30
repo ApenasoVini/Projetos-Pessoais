@@ -5,4 +5,4 @@
 <p align="justify">Código em que um usuário pode criar sua array personalizada, podendo editar e excluir elementos da mesma.
 
 <h2 align="justify">⚽ Futebol em Array</h2>
-<p align="justify">Código em que um usuário cria seu time de futebol, utilizando array.
+<p align="justify">Código em que um usuário cria seu time de futebol com posições e táticas diferentes utilizando array.
