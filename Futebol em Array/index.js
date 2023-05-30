@@ -6,7 +6,7 @@ var timeElement = document.getElementById('time');
 // Parâmetros para aceitar apenas letras (com acentos)
 function letras(input) {
     return /^\p{L}+$/u.test(input);
-  }
+}
 
 // Parâmetros para aceitar apenas letras (sem acentos)
 // function letras(input) {
@@ -17,10 +17,10 @@ function letras(input) {
 //   function numeros(input) {
 //     return /^\d+$/.test(input);
 //   }
-  
+
 
 function campo() {
-    
+
     goleiro = prompt("Digite o nome do goleiro");
     zagueiro1 = prompt("Digite o nome do primeiro zagueiro");
     zagueiro2 = prompt("Digite o nome do segundo zagueiro");
@@ -34,23 +34,13 @@ function campo() {
     centroAvante = prompt("Digite o nome do centroavante");
 
     // Parâmetros sendo usados
-    if (!letras(goleiro) || 
-    !letras(zagueiro1) || 
-    !letras(zagueiro2) || 
-    !letras(latdireito) || 
-    !letras(latesquerdo) || 
-    !letras(volante) || 
-    !letras(meia1) || 
-    !letras(meia2) || 
-    !letras(pontaE) || 
-    !letras(pontaD) || 
-    !letras(centroAvante)) {
+    if (!letras(goleiro) || !letras(zagueiro1) || !letras(zagueiro2) || !letras(latdireito) || !letras(latesquerdo) || !letras(volante) || !letras(meia1) || !letras(meia2) || !letras(pontaE) || !letras(pontaD) || !letras(centroAvante)) {
 
         alert("Escalação inválida. Por favor, digite o nome do jogador (verifique de não digitar números).");
         return;
     }
 
-    selecao = [goleiro, '<br><br>' , latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>' ,volante, '<br>', meia1, meia2, '<br><br>', pontaD, , centroAvante, pontaE];
+    selecao = [goleiro, '<br><br>', latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>', volante, '<br>', meia1, meia2, '<br><br>', pontaD, , centroAvante, pontaE];
     timeElement.innerHTML = selecao.join(' ');
 }
 
