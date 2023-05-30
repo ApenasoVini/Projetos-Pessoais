@@ -16,4 +16,10 @@ function campo() {
     var selecao = [goleiro, zagueiro1, zagueiro2, latdireito, latesquerdo, volante, meia1, meia2, pontaD, pontaE, centroAvante];
     var timeElement = document.getElementById('time');
     timeElement.innerHTML = selecao.join('<br>');
+
+}
+
+function limpar() {
+    var selecao = [goleiro, zagueiro1, zagueiro2, latdireito, latesquerdo, volante, meia1, meia2, pontaD, pontaE, centroAvante];
+    selecao.splice(0, selecao.length);
 }
