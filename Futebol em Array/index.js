@@ -29,13 +29,24 @@ function campo() {
     centroAvante = prompt("Digite o nome do centroavante");
 
     // Parâmetros sendo usados
-    if (!letras(goleiro) || !letras(zagueiro1) || !letras(zagueiro2) || !letras(latdireito) || !letras(latesquerdo) || !letras(volante) || !letras(meia1) || !letras(meia2) || !letras(pontaE) || !letras(pontaD) || !letras(centroAvante)) {
+    if (!letras(goleiro) || 
+    !letras(zagueiro1) || 
+    !letras(zagueiro2) || 
+    !letras(latdireito) || 
+    !letras(latesquerdo) || 
+    !letras(volante) || 
+    !letras(meia1) || 
+    !letras(meia2) || 
+    !letras(pontaE) || 
+    !letras(pontaD) || 
+    !letras(centroAvante)) {
+
         alert("Escalação inválida. Por favor, digite o nome do jogador (verifique de não digitar números).");
         return;
     }
 
-    selecao = [goleiro, '<br><br>' , latdireito,'', zagueiro1, zagueiro2, latesquerdo, '<br><br>' ,volante, '<br>', meia1, meia2, '<br><br>', pontaD, , centroAvante, pontaE];
-    timeElement.innerHTML = selecao.join('');
+    selecao = [goleiro, '<br><br>' , latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>' ,volante, '<br>', meia1, meia2, '<br><br>', pontaD, , centroAvante, pontaE];
+    timeElement.innerHTML = selecao.join(' ');
 }
 
 function limpar() {
