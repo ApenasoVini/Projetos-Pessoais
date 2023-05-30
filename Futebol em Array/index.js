@@ -25,7 +25,7 @@ function campo() {
     taticas = prompt("A -> (4-3-3)\nB -> (3-5-2)\nC -> (4-4-2)\nD- > (4-5-1)\nSair")
 
     switch (taticas) {
-        case "A" || "a":
+        case "A":
 
             do {
                 goleiro = prompt("Digite o nome do goleiro");
@@ -45,7 +45,7 @@ function campo() {
             timeElement.innerHTML = selecao.join(' ');
             break;
 
-        case "B" || "b":
+        case "B":
 
             do {
                 goleiro = prompt("Digite o nome do goleiro");
@@ -65,7 +65,7 @@ function campo() {
             timeElement.innerHTML = selecao.join(' ');
             break;
 
-        case "C" || "c":
+        case "C":
 
             do {
 
@@ -85,7 +85,7 @@ function campo() {
             timeElement.innerHTML = selecao.join(' ');
             break;
 
-        case "D" || "d":
+        case "D":
 
             do {
                 goleiro = prompt("Digite o nome do goleiro");
@@ -109,7 +109,7 @@ function campo() {
             return
     }
 
-    if (taticas !== Sair ||taticas !== SAIR ||  taticas !== sair || taticas !== A || taticas !== a || taticas !== B || taticas !== b || taticas !== C || taticas !== c || taticas !== D || taticas !== d) {
+    if (taticas !== Sair ||taticas !== SAIR ||  taticas !== sair || taticas !== A || taticas !== B || taticas !== C || taticas !== D) {
         alert("Opção Inválida!")
         return
     }
