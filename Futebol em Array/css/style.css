@@ -53,8 +53,14 @@ body {
 
 #estadio {
     text-align: center;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWh_5xw8ajrxXiZxgYk-e9dOASGdZKKom21w&usqp=CAU);
-    
+    width: auto;
+    height: auto;
     margin: auto;
+}
+
+#estadio img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
