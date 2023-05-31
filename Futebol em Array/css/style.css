@@ -59,8 +59,7 @@ body {
 }
 
 #estadio img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 20%;
+    height: 20%;
 }
 
