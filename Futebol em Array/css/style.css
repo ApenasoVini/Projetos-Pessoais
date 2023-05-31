@@ -13,13 +13,6 @@ body {
 
 /* id=# class=. */
 
-#time {
-    margin-top: 40px;
-    font-family: system-ui;
-    font-size: large;
-    color: black;
-}
-
 #titulo {
     text-align: center;
     margin-top: 20px;
@@ -53,13 +46,19 @@ body {
 
 #estadio {
     text-align: center;
-    width: auto;
-    height: auto;
-    margin: auto;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWh_5xw8ajrxXiZxgYk-e9dOASGdZKKom21w&usqp=CAU");
 }
 
 #estadio img {
+    text-align: center;
     width: 20%;
     height: 20%;
+    z-index: -1;
+}
+
+#time {
+    font-family: system-ui;
+    font-size: large;
+    color: black;
 }
 
