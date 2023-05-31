@@ -1,6 +1,6 @@
 var goleiro, zagueiro1, zagueiro3, zagueiro2, latdireito, latesquerdo, volante, alaE, alaD, meia3, meia1, meia2, pontaD, pontaE, atacante1, atacante2, centroAvante;
 var selecao = [];
-var timeElement = document.getElementById('time');
+var timeElement = document.getElementById('estadio');
 var taticas
 
 // Parâmetros para aceitar apenas letras (com acentos)
@@ -47,7 +47,7 @@ function campo() {
                 return;
             }
             selecao = [goleiro, '<br><br>', latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>', volante, '<br>', meia1, meia2, '<br><br>', pontaD, , centroAvante, pontaE];
-            timeElement.innerHTML = selecao.join(' ');
+            estadioElement.innerHTML = selecao.join(' ');
             break;
 
             case "B":
@@ -69,7 +69,7 @@ function campo() {
                 return;
             }
             selecao = [goleiro, '<br><br>', zagueiro1, zagueiro2, zagueiro3, '<br><br>', meia1, meia2, meia3, '<br>', alaE, alaD, '<br><br>', atacante1, atacante2];
-            timeElement.innerHTML = selecao.join(' ');
+            estadioElement.innerHTML = selecao.join(' ');
             break;
 
             case "C":
@@ -91,7 +91,7 @@ function campo() {
                 return;
             }
             selecao = [goleiro, '<br><br>', latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>', meia1, meia2, '<br>', alaD, alaE, '<br><br>', atacante1, atacante2];
-            timeElement.innerHTML = selecao.join(' ');
+            estadioElement.innerHTML = selecao.join(' ');
             break;
 
             case "D":
@@ -113,7 +113,7 @@ function campo() {
                 return;
             }
             selecao = [goleiro, '<br><br>', latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>', volante, '<br>', meia1, meia2, '<br>', alaD, alaE, centroAvante];
-            timeElement.innerHTML = selecao.join(' ');
+            estadioElement.innerHTML = selecao.join(' ');
             break;
     }
 
@@ -121,7 +121,7 @@ function campo() {
 }
 
 function limpar() {
-    timeElement.innerHTML = '';
+    estadioElement.innerHTML = '';
 }
 
 // Parâmetros sendo usados
