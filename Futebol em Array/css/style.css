@@ -44,15 +44,14 @@ body {
     color: white ;
 }
 
-#estadio {
+#divtime {
     text-align: center;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWh_5xw8ajrxXiZxgYk-e9dOASGdZKKom21w&usqp=CAU");
 }
 
-#estadio img {
-    text-align: center;
+#estadio {
     width: 20%;
     height: 20%;
+    margin: auto;
     z-index: -1;
 }
 
@@ -60,5 +59,7 @@ body {
     font-family: system-ui;
     font-size: large;
     color: black;
+    margin-top: -27%;
+    font-size:larger;
 }
 
