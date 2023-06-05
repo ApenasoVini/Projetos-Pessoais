@@ -25,7 +25,6 @@ function campo() {
     alert("Escolha a tática que deseja utilizar:")
     taticas = prompt("A -> (4-3-3)\nB -> (3-5-2)\nC -> (4-4-2)\nD- > (4-5-1)\nSair")
         }    while (taticas !== "Sair" && taticas !== "sair" && taticas !== "A" && taticas !== "a" && taticas !== "B" && taticas !== "b" && taticas !== "C" && taticas !== "c" && taticas !== "D" && taticas !== "d") 
-    
         
     switch (taticas) {
         case "A":
@@ -116,8 +115,6 @@ function campo() {
             timeElement.innerHTML = selecao.join(' ');
             break;
     }
-
-
 }
 
 function limpar() {
