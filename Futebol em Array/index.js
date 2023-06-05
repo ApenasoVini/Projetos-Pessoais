@@ -112,7 +112,7 @@ function campo() {
                 alert("Escalação inválida. Por favor, digite o nome do jogador (verifique de não digitar números).");
                 return;
             }
-            selecao = [goleiro, '<br><br>', latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>', volante, '<br>', meia1, meia2, '<br>', alaD, alaE, centroAvante];
+            selecao = [goleiro, '<br><br>', latdireito, zagueiro1, zagueiro2, latesquerdo, '<br><br>', volante, '<br>', meia1, meia2, '<br>', alaD, alaE, '<br><br>', centroAvante];
             timeElement.innerHTML = selecao.join(' ');
             break;
     }
