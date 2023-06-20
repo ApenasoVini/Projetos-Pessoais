@@ -9,11 +9,27 @@ body {
     background-color: white;
 }
 
-.space {
-    background-color: black;
-    color: black;
-}
+#game {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  td {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 60px;
+    cursor: pointer;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
 
-#jogo {
-    margin: auto;
-}
+  }
