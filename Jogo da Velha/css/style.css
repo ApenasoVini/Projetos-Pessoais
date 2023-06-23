@@ -22,6 +22,7 @@ body {
   height: 300px;
   border-collapse: collapse;
   vertical-align: auto;
+  margin-top: 10%;
 }
 
 td {
